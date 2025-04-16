@@ -1,0 +1,23 @@
+version: '3.4'
+
+services:
+  orderly.users.api:
+    image: orderly.users.api
+    container_name: Orderly.Users.Api
+    build:
+      context: .
+      dockerfile: Orderly.Users.API/Dockerfile
+    depends_on:
+        - orderly.users.postgres
+
+  orderly.users.postgres:
+    image: postgres:latest
+    container_name: Orderly.Users.Postgres
+    environment:
+      - POSTGRES_DB=${POSTGRES_DB}
+      - POSTGRES_USER=${POSTGRES_USER}
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
+    volumes:
+        - ./.containers/database:/var/lib/postgresql/data
+    ports:
+        - ${POSTGRES_PORT}:${POSTGRES_PORT}
