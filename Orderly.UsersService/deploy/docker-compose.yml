@@ -1,12 +1,10 @@
-version: '3.4'
-
 services:
   orderly.users.api:
     image: orderly.users.api
     container_name: Orderly.Users.Api
     build:
-      context: .
-      dockerfile: Orderly.Users.API/Dockerfile
+      context: ../src
+      dockerfile: ../deploy/Dockerfile
     depends_on:
         - orderly.users.postgres
 

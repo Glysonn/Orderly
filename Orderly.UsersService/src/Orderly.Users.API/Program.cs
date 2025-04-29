@@ -29,6 +29,8 @@ if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI();
+
+    await app.CreateDatabaseAsync();
 }
 
 app.UseCustomExceptionHandler();
