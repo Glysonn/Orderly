@@ -1,7 +1,6 @@
 ﻿using Dapper;
 using Orderly.Users.Application.Data;
 using Orderly.Users.Domain;
-using Orderly.Users.Domain.ValueObjects;
 
 namespace Orderly.Users.Infrastructure.Repositories;
 

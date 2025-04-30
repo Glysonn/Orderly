@@ -3,7 +3,7 @@ using Orderly.Users.Application.Models;
 
 namespace Orderly.Users.Application.Validators;
 
-public sealed class RegisterRequestValidator
+internal sealed class RegisterRequestValidator
     : AbstractValidator<RegisterRequest>
 {
     private const int NameMinLength = 5;

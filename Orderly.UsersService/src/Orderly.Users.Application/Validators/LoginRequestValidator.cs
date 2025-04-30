@@ -3,7 +3,7 @@ using Orderly.Users.Application.Models;
 
 namespace Orderly.Users.Application.Validators;
 
-public sealed class LoginRequestValidator
+internal sealed class LoginRequestValidator
     : AbstractValidator<LoginRequest>
 {
     private const int PasswordMinLength = 5;

@@ -4,7 +4,7 @@ using System.Data;
 
 namespace Orderly.Users.Infrastructure.Data;
 
-internal sealed class SqlConnectionFactory(string connectionString)
+public sealed class SqlConnectionFactory(string connectionString)
     : ISqlConnectionFactory
 {
     private readonly string _connectionString = connectionString;

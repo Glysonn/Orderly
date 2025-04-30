@@ -5,7 +5,7 @@ using Orderly.Users.Domain.ValueObjects;
 
 namespace Orderly.Users.Application;
 
-internal class UserService(IUserRepository userRepository) 
+public class UserService(IUserRepository userRepository) 
     : IUserService
 {
     private readonly IUserRepository _userRepository = userRepository;

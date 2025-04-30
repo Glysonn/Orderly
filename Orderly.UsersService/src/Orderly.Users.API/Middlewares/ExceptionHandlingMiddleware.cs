@@ -1,6 +1,4 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using System;
-using System.ComponentModel.DataAnnotations;
 
 namespace Orderly.Users.API.Middlewares;
 
@@ -53,10 +51,3 @@ public class ExceptionHandlingMiddleware(
         };
     }
 }
-
-internal record ExceptionDetails(
-    int Status,
-    string Type,
-    string Title,
-    string Detail,
-    IEnumerable<object>? Errors);
