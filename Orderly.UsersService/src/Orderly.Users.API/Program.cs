@@ -1,4 +1,3 @@
-using FluentValidation.AspNetCore;
 using Orderly.Users.API.Extensions;
 using Orderly.Users.Application;
 using Orderly.Users.Infrastructure;
@@ -20,8 +19,6 @@ builder.Services.AddSwaggerGen();
 
 builder.Services.AddInfrastructure(builder.Configuration);
 builder.Services.AddApplication();
-
-builder.Services.AddFluentValidationAutoValidation();
 
 var app = builder.Build();
 
