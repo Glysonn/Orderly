@@ -1,6 +1,7 @@
-﻿using Orderly.Users.Domain.ValueObjects;
+﻿using Orderly.Users.Domain.Common;
+using Orderly.Users.Domain.Users.ValueObjects;
 
-namespace Orderly.Users.Domain;
+namespace Orderly.Users.Domain.Users;
 
 public class User : Entity
 {
@@ -13,11 +14,10 @@ public class User : Entity
     public Gender Gender { get; private set; }
 
     private User(
-        Guid id,
         Name name,
         Email email,
         Password password,
-        Gender? gender) : base(id)
+        Gender? gender)
     {
         Name = name;
         Email = email;
@@ -30,7 +30,7 @@ public class User : Entity
         Password password,
         Gender? gender)
     {
-        var user = new User(Guid.NewGuid(), name, email, password, gender);
+        var user = new User(name, email, password, gender);
 
         return user;
     }

@@ -1,5 +1,5 @@
 ﻿using Dapper;
-using Orderly.Users.Domain.ValueObjects;
+using Orderly.Users.Domain.Users.ValueObjects;
 using System.Data;
 
 namespace Orderly.Users.Infrastructure.Data.TypeHandlers;

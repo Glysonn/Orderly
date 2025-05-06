@@ -1,7 +1,9 @@
 using Moq;
 using Orderly.Users.Application.Models;
+using Orderly.Users.Application.Services;
 using Orderly.Users.Domain;
-using Orderly.Users.Domain.ValueObjects;
+using Orderly.Users.Domain.Users;
+using Orderly.Users.Domain.Users.ValueObjects;
 
 namespace Orderly.Users.Application.UnitTests;
 

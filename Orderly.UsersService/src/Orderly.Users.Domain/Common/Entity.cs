@@ -1,4 +1,4 @@
-﻿namespace Orderly.Users.Domain;
+﻿namespace Orderly.Users.Domain.Common;
 
 public abstract class Entity
 {
@@ -6,12 +6,6 @@ public abstract class Entity
 
     protected Entity()
     {
-
+        Id = Guid.NewGuid();
     }
-
-    protected Entity(Guid id)
-    {
-        Id = id;
-    }
-
 }

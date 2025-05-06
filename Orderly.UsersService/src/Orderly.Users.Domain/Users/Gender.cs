@@ -1,4 +1,4 @@
-﻿namespace Orderly.Users.Domain;
+﻿namespace Orderly.Users.Domain.Users;
 
 public enum Gender
 {

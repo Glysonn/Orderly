@@ -1,11 +1,12 @@
 ﻿using Orderly.Users.Application.Extensions;
 using Orderly.Users.Application.Models;
 using Orderly.Users.Domain;
-using Orderly.Users.Domain.ValueObjects;
+using Orderly.Users.Domain.Users;
+using Orderly.Users.Domain.Users.ValueObjects;
 
-namespace Orderly.Users.Application;
+namespace Orderly.Users.Application.Services;
 
-public class UserService(IUserRepository userRepository) 
+public class UserService(IUserRepository userRepository)
     : IUserService
 {
     private readonly IUserRepository _userRepository = userRepository;

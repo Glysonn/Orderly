@@ -1,6 +1,6 @@
 ﻿using Orderly.Users.API.Middlewares;
-using Orderly.Users.Application;
-using Orderly.Users.Domain;
+using Orderly.Users.Application.Services;
+using Orderly.Users.Domain.Common;
 using Orderly.Users.Infrastructure.Data;
 using System.Reflection;
 

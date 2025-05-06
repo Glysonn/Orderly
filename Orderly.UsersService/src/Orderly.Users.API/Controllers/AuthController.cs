@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Orderly.Users.Application;
 using Orderly.Users.Application.Models;
+using Orderly.Users.Application.Services;
 
 namespace Orderly.Users.API.Controllers;
 

@@ -1,4 +1,4 @@
-﻿using Orderly.Users.Domain;
+﻿using Orderly.Users.Domain.Users;
 
 namespace Orderly.Users.Application.Models;
 

@@ -1,4 +1,6 @@
-﻿namespace Orderly.Users.Domain;
+﻿using Orderly.Users.Domain.Users;
+
+namespace Orderly.Users.Domain;
 
 public interface IUserRepository
 {

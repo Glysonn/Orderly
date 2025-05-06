@@ -1,5 +1,5 @@
 ﻿using Orderly.Users.Application.Models;
-using Orderly.Users.Domain;
+using Orderly.Users.Domain.Users;
 
 namespace Orderly.Users.Application.Extensions;
 

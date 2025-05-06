@@ -1,6 +1,6 @@
 ﻿using Orderly.Users.Application.Models;
 
-namespace Orderly.Users.Application;
+namespace Orderly.Users.Application.Services;
 
 /// <summary>
 /// Contract for users service that contains use cases for users.

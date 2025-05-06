@@ -1,5 +1,6 @@
 ﻿using FluentValidation;
 using Microsoft.Extensions.DependencyInjection;
+using Orderly.Users.Application.Services;
 
 namespace Orderly.Users.Application;
 
